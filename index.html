@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+
+  <head>
+	<meta charset="UTF-8">
+	<title>FeedReader by Josh Forward</title>
+    
+	<link href="css/normalize.css" rel="stylesheet" type="text/css">
+	<link href="css/FeedReader.css" rel="stylesheet" type="text/css">
+	
+	<script type="text/javascript" src="js/FeedReader.js"></script>
+	<script type="text/javascript" src="js/Templater.js"></script>
+	
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  </head>
+  
+  <body>
+	<script>
+		new FeedReader({
+			'feedURL': "http://www.indystar.com/apps/pbcs.dll/section?Category=TOPSTORIES&template=rss"
+		});
+	</script>
+  </body>
+
+</html>
