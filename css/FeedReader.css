@@ -1,0 +1,175 @@
+/** STRUCTURE **/
+body {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+}
+h1,h2,h3,a,p {
+	margin: 0;
+	line-height: 1;
+	text-decoration: none;
+}
+a, a:active, a:focus, a:hover {
+	outline: 0;
+}
+
+header, article, footer {
+	padding: 10px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+header, main, footer {
+	width: 80%;
+	min-width: 700px;
+	max-width: 1000px;
+	margin: auto;
+	border: 1px solid transparent;
+}
+
+header {
+	margin: 20px auto;
+}
+
+header .copyright {
+	display: block;
+	text-align: right;
+	margin-top: -1em;
+}
+
+article, article h3 {
+	border: 0px solid transparent;
+}
+
+article {
+	width: 50%;
+	float: left;
+	padding: 0;
+	padding-bottom: 20px;
+	padding-right: 10px;
+	cursor: pointer;
+}
+article:nth-of-type(2n) {
+	padding: 0;
+	padding-left: 10px;
+}
+
+article p {
+	min-height: 10em;
+	line-height: 1.5em;
+	font-size: 1em;
+	border-top: 1px solid transparent;
+	padding: 10px;
+}
+
+article:nth-of-type(2n+1) {
+	clear: both;
+}
+
+article h3 {
+	padding: 10px 5px;
+	font-size: 1.2em;
+	border-bottom-width: 1px;
+	height: 2em;
+	overflow: hidden;
+}
+
+article p + a {
+	display: block;
+	text-align: right;
+	padding: 5px 10px;
+	font-size: .8em;
+	font-weight: bold;
+}
+
+article .article-container {
+	border: 2px solid transparent;
+}
+article .article-container  {
+	border-radius: 10px 10px 0px 0px;
+	overflow: hidden;
+}
+/** END STRUCTURE **/
+
+
+
+
+
+/** SMALL SCREEN ADJUSTMENTS **/
+/** For small width screens - less than ~700px wide... ff seems to include the scrollbars in this calc **/
+@media screen and (max-width: 720px) {
+
+	header, main, footer {
+		width: 96%;
+		min-width: 300px;
+	}
+	
+	header {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+	header .copyright {
+		text-align: left;
+		padding-top: .8em;
+		margin-top: 0;
+	}
+
+	article {
+		width: 100%;
+		padding:0 !important;
+	}
+	
+	article ~ article {
+		border-top-width: 10px;
+	}
+}
+/** END SMALL SCREEN ADJUSTMENTS **/
+
+
+
+
+
+/** COLORS **/
+/*	Base Color Palette: #0969A2, #245A7A, #03436A, #3D9AD1, #64A8D1 */
+body {
+	background: #0969A2;
+	background-attachment: fixed;
+	
+	background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.25), rgba(0,0,0,0)); /* For Chrome and Safari */
+	background-image:    -moz-linear-gradient(bottom, rgba(0,0,0,.25), rgba(0,0,0,0)); /* For old Fx (3.6 to 15) */
+	background-image:     -ms-linear-gradient(bottom, rgba(0,0,0,.25), rgba(0,0,0,0)); /* For pre-releases of IE 10*/
+	background-image:      -o-linear-gradient(bottom, rgba(0,0,0,.25), rgba(0,0,0,0)); /* For old Opera (11.1 to 12.0) */ 
+	
+	background-image: linear-gradient(to top, rgba(0,0,0,.25), rgba(0,0,0,0)); /* Standard syntax; must be last */
+}
+a {
+	color: #0969A2;
+}
+header, section {
+	background-color: #f6f6ff;
+}
+header {
+	border-color: #03436A;
+}
+
+header, article .article-container {
+	box-shadow: 2px 2px 10px #03436A;
+}
+article .article-container {
+	border-color: #3D9AD1;
+}
+
+article h3 {
+	background-color: #3D9AD1;
+	border-bottom-color: #ccc;
+	color: #fff;
+	text-shadow: 1px 1px 1px #03436A;
+	box-shadow: 0px 10px 10px rgba(0,0,255,.15) inset;
+}
+
+section {
+	border-color: #999;
+	box-shadow: 0px 5px 5px rgba(0,0,0,.15) inset;
+}
+/** END COLORS **/
