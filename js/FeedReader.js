@@ -3,7 +3,7 @@
  *
  * @author Josh Forward (joshforward@gmail.com)
  * @constructor
- * @param {string|HTMLElement} idOrObject Where to append the feed once we've processed it.
+ * @param {object} options Overrides for any of the options defined in this.data
  * @this {FeedReader}
  */
 var FeedReader = function(options) {
